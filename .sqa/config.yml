@@ -1,0 +1,64 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: fix/updatego
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/FragmentScreen/fandanGO-core:
+      branch: main
+      repo: https://github.com/FragmentScreen/fandanGO-core
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/FragmentScreen/fandanGO-core git:
+        commands:
+        - /usr/bin/env sh .sqa/script.arctic_realistic_caiman.sh
+        container: qc.acc_thistle_frugal_spren
+  QC.Doc:
+    repos:
+      github.com/FragmentScreen/fandanGO-core find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.magenta_shy_mandrill.sh
+        container: qc.doc_tundra_imaginative_osprey
+      github.com/FragmentScreen/fandanGO-core git:
+        commands:
+        - /usr/bin/env sh .sqa/script.tan_helpful_lionfish.sh
+        container: qc.doc_denim_content_warthog
+      github.com/FragmentScreen/fandanGO-core markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.pistachio_vibrant_bullfrog.sh
+        container: qc.doc_lagoon_unique_butterfly
+  QC.Lic:
+    repos:
+      github.com/FragmentScreen/fandanGO-core licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.ruby_philosophical_weasel.sh
+        container: qc.lic_watermelon_industrious_echidna
+  QC.Sec:
+    repos:
+      github.com/FragmentScreen/fandanGO-core bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.jet_insightful_panther.sh
+        container: qc.sec_fern_zealous_gnu
+  QC.Sty:
+    repos:
+      github.com/FragmentScreen/fandanGO-core flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.steel_observant_weasel.sh
+        container: qc.sty_royal_bewildered_warthog
+  QC.Uni:
+    repos:
+      github.com/FragmentScreen/fandanGO-core pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.coral_balanced_hydra.sh
+        container: qc.uni_chestnut_amused_gerbil
+  QC.Ver:
+    repos:
+      github.com/FragmentScreen/fandanGO-core get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.sapphire_peaceful_octopus.sh
+        container: qc.ver_claret_brave_donkey
+timeout: 5400
