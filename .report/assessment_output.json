@@ -3,20 +3,20 @@
         "version": "3.5.0",
         "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/fandanGO-core.assess.sqaaas/main/.report/assessment_output.json",
         "report_permalink": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/fandanGO-core.assess.sqaaas/main/.report/assessment_output.json",
-        "timestamp": 1794401716.4481595
+        "timestamp": 1794504947.6873698
     },
     "repository": [
         {
             "url": "https://github.com/FragmentScreen/fandanGO-core",
             "name": "FragmentScreen/fandanGO-core",
             "tag": "main",
-            "commit_id": "c9369212b4d9d4f604a77063795b934f832dd1b8",
+            "commit_id": "dd89bc59cba8e2c38786800e52cd25b6045c7a80",
             "is_main_repo": true,
             "avatar_url": "https://avatars.githubusercontent.com/u/161709663?v=4",
             "description": null,
             "languages": null,
             "topics": null,
-            "badge_status": "no_badge"
+            "badge_status": "bronze"
         }
     ],
     "report": {
@@ -50,7 +50,7 @@
                                         "git rev-parse --is-inside-work-tree "
                                     ],
                                     "stdout_text": "true",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/34/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/34/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -73,7 +73,7 @@
             }
         },
         "QC.Doc": {
-            "valid": false,
+            "valid": true,
             "subcriteria": {
                 "QC.Doc06.1": {
                     "description": "Is the software scope outlined in the code repository?",
@@ -101,8 +101,8 @@
                                     "stdout_command": [
                                         "find_doc_files.py --file_type all"
                                     ],
-                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 4171}], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/43/log?consoleFull"
+                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 4230}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 686}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 437}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/43/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -116,11 +116,21 @@
                                 "README": [
                                     {
                                         "file_name": "README.md",
-                                        "size": 4171
+                                        "size": 4230
                                     }
                                 ],
-                                "CODE_OF_CONDUCT": [],
-                                "CONTRIBUTING": []
+                                "CODE_OF_CONDUCT": [
+                                    {
+                                        "file_name": "CODE_OF_CONDUCT.md",
+                                        "size": 686
+                                    }
+                                ],
+                                "CONTRIBUTING": [
+                                    {
+                                        "file_name": "CONTRIBUTING.md",
+                                        "size": 437
+                                    }
+                                ]
                             }
                         }
                     ],
@@ -132,8 +142,8 @@
                     "hint": "A CODE_OF_CONDUCT file sets the path for a constructive, respectful and positive atmosphere among all the contributors in your software project. Of course you can define your own, but in case you want to rely on external and widely-adopted code of conducts check out some of the most popular ones: <a href=\"https://contributor-covenant.org/\" target=\"_blank\">Contributor Covenant</a> or <a href=\"https://web.archive.org/web/20200330154000/http://citizencodeofconduct.org/\" target=\"_blank\">Citizen Code of Conduct</a>",
                     "evidence": [
                         {
-                            "valid": false,
-                            "message": "A CODE_OF_CONDUCT file is not present in the code repository",
+                            "valid": true,
+                            "message": "A CODE_OF_CONDUCT file is present in the code repository",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-find_doc_files",
                                 "version": "2.1.0"
@@ -152,8 +162,8 @@
                                     "stdout_command": [
                                         "find_doc_files.py --file_type all"
                                     ],
-                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 4171}], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/43/log?consoleFull"
+                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 4230}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 686}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 437}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/43/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -167,16 +177,25 @@
                                 "README": [
                                     {
                                         "file_name": "README.md",
-                                        "size": 4171
+                                        "size": 4230
                                     }
                                 ],
-                                "CODE_OF_CONDUCT": [],
-                                "CONTRIBUTING": []
+                                "CODE_OF_CONDUCT": [
+                                    {
+                                        "file_name": "CODE_OF_CONDUCT.md",
+                                        "size": 686
+                                    }
+                                ],
+                                "CONTRIBUTING": [
+                                    {
+                                        "file_name": "CONTRIBUTING.md",
+                                        "size": 437
+                                    }
+                                ]
                             }
                         }
                     ],
-                    "valid": false,
-                    "required_for_next_level_badge": true
+                    "valid": true
                 },
                 "QC.Doc06.2": {
                     "description": "Is there a clear path or guidelines on how to contribute to the code?",
@@ -184,8 +203,8 @@
                     "hint": "A CONTRIBUTING file shall be present in the root path of the code repository describing the expected workflow to follow when adding contributions. Please check <a href=\"https://mozillascience.github.io/working-open-workshop/contributing/\" target=\"_blank\">Mozilla's guidelines</a> and <a href=\"https://github.com/github/docs/blob/main/CONTRIBUTING.md\" target=\"_blank\">GitHub's CONTRIBUTING.md example</a> to get inspired on how to write a good CONTRIBUTING file",
                     "evidence": [
                         {
-                            "valid": false,
-                            "message": "A CONTRIBUTING file is not present in the code repository",
+                            "valid": true,
+                            "message": "A CONTRIBUTING file is present in the code repository",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-find_doc_files",
                                 "version": "2.1.0"
@@ -204,8 +223,8 @@
                                     "stdout_command": [
                                         "find_doc_files.py --file_type all"
                                     ],
-                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 4171}], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/43/log?consoleFull"
+                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 4230}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 686}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 437}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/43/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -219,16 +238,25 @@
                                 "README": [
                                     {
                                         "file_name": "README.md",
-                                        "size": 4171
+                                        "size": 4230
                                     }
                                 ],
-                                "CODE_OF_CONDUCT": [],
-                                "CONTRIBUTING": []
+                                "CODE_OF_CONDUCT": [
+                                    {
+                                        "file_name": "CODE_OF_CONDUCT.md",
+                                        "size": 686
+                                    }
+                                ],
+                                "CONTRIBUTING": [
+                                    {
+                                        "file_name": "CONTRIBUTING.md",
+                                        "size": 437
+                                    }
+                                ]
                             }
                         }
                     ],
-                    "valid": false,
-                    "required_for_next_level_badge": true
+                    "valid": true
                 },
                 "QC.Doc01.1": {
                     "description": "Are docs managed in the same repository as code?",
@@ -254,7 +282,7 @@
                                         "git rev-parse --is-inside-work-tree "
                                     ],
                                     "stdout_text": "true",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/52/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/52/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -295,8 +323,8 @@
                                     "stdout_command": [
                                         "mdl --json  ."
                                     ],
-                                    "stdout_text": "[{\"filename\":\"./README.md\",\"line\":14,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md009---trailing-spaces\"},{\"filename\":\"./README.md\",\"line\":34,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md009---trailing-spaces\"},{\"filename\":\"./README.md\",\"line\":36,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md009---trailing-spaces\"},{\"filename\":\"./README.md\",\"line\":43,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md009---trailing-spaces\"},{\"filename\":\"./README.md\",\"line\":46,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md009---trailing-spaces\"},{\"filename\":\"./README.md\",\"line\":17,\"rule\":\"MD012\",\"aliases\":[\"no-multiple-blanks\"],\"description\":\"Multiple consecutive blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md012---multiple-consecutive-blank-lines\"},{\"filename\":\"./README.md\",\"line\":37,\"rule\":\"MD012\",\"aliases\":[\"no-multiple-blanks\"],\"description\":\"Multiple consecutive blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md012---multiple-consecutive-blank-lines\"},{\"filename\":\"./README.md\",\"line\":9,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":18,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":28,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":35,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":38,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":44,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":55,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":91,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":97,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":98,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":99,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":101,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":107,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":125,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md022---headers-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":18,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":23,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":28,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":38,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":50,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":55,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":60,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":67,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":91,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":97,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":101,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":10,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":13,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":19,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":24,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":29,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":33,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":39,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":51,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":56,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":61,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":64,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":68,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":77,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":82,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":92,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":96,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":117,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md031---fenced-code-blocks-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":110,\"rule\":\"MD032\",\"aliases\":[\"blanks-around-lists\"],\"description\":\"Lists should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md032---lists-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":115,\"rule\":\"MD032\",\"aliases\":[\"blanks-around-lists\"],\"description\":\"Lists should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md032---lists-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":124,\"rule\":\"MD032\",\"aliases\":[\"blanks-around-lists\"],\"description\":\"Lists should be surrounded by blank lines\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md032---lists-should-be-surrounded-by-blank-lines\"},{\"filename\":\"./README.md\",\"line\":103,\"rule\":\"MD034\",\"aliases\":[\"no-bare-urls\"],\"description\":\"Bare URL used\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md034---bare-url-used\"}]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/61/log?consoleFull"
+                                    "stdout_text": "[{\"filename\":\"./CODE_OF_CONDUCT.md\",\"line\":21,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":12,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":13,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":14,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":46,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md009---trailing-spaces\"},{\"filename\":\"./README.md\",\"line\":49,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md009---trailing-spaces\"},{\"filename\":\"./README.md\",\"line\":9,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":18,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":30,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":38,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":40,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":47,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":59,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":101,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":109,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":110,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":111,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":113,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":119,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md013---line-length\"},{\"filename\":\"./README.md\",\"line\":18,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":24,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":30,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":40,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":53,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":59,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":65,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":74,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":101,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":109,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":113,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./README.md\",\"line\":130,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"}]",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/61/log?consoleFull"
                                 },
                                 "level": "RECOMMENDED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -307,22 +335,30 @@
                                 "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
                             },
                             "data_unstructured": {
+                                "./CODE_OF_CONDUCT.md": {
+                                    "MD013": {
+                                        "description": "Line length",
+                                        "line": [
+                                            21
+                                        ]
+                                    }
+                                },
+                                "./CONTRIBUTING.md": {
+                                    "MD029": {
+                                        "description": "Ordered list item prefix",
+                                        "line": [
+                                            12,
+                                            13,
+                                            14
+                                        ]
+                                    }
+                                },
                                 "./README.md": {
                                     "MD009": {
                                         "description": "Trailing spaces",
                                         "line": [
-                                            14,
-                                            34,
-                                            36,
-                                            43,
-                                            46
-                                        ]
-                                    },
-                                    "MD012": {
-                                        "description": "Multiple consecutive blank lines",
-                                        "line": [
-                                            17,
-                                            37
+                                            46,
+                                            49
                                         ]
                                     },
                                     "MD013": {
@@ -330,75 +366,34 @@
                                         "line": [
                                             9,
                                             18,
-                                            28,
-                                            35,
+                                            30,
                                             38,
-                                            44,
-                                            55,
-                                            91,
-                                            97,
-                                            98,
-                                            99,
+                                            40,
+                                            47,
+                                            59,
                                             101,
-                                            107
-                                        ]
-                                    },
-                                    "MD022": {
-                                        "description": "Headers should be surrounded by blank lines",
-                                        "line": [
-                                            125
+                                            109,
+                                            110,
+                                            111,
+                                            113,
+                                            119
                                         ]
                                     },
                                     "MD029": {
                                         "description": "Ordered list item prefix",
                                         "line": [
                                             18,
-                                            23,
-                                            28,
-                                            38,
-                                            50,
-                                            55,
-                                            60,
-                                            67,
-                                            91,
-                                            97,
-                                            101
-                                        ]
-                                    },
-                                    "MD031": {
-                                        "description": "Fenced code blocks should be surrounded by blank lines",
-                                        "line": [
-                                            10,
-                                            13,
-                                            19,
                                             24,
-                                            29,
-                                            33,
-                                            39,
-                                            51,
-                                            56,
-                                            61,
-                                            64,
-                                            68,
-                                            77,
-                                            82,
-                                            92,
-                                            96,
-                                            117
-                                        ]
-                                    },
-                                    "MD032": {
-                                        "description": "Lists should be surrounded by blank lines",
-                                        "line": [
-                                            110,
-                                            115,
-                                            124
-                                        ]
-                                    },
-                                    "MD034": {
-                                        "description": "Bare URL used",
-                                        "line": [
-                                            103
+                                            30,
+                                            40,
+                                            53,
+                                            59,
+                                            65,
+                                            74,
+                                            101,
+                                            109,
+                                            113,
+                                            130
                                         ]
                                     }
                                 }
@@ -410,9 +405,9 @@
                 }
             },
             "coverage": {
-                "percentage": 40,
+                "percentage": 80,
                 "total_subcriteria": 5,
-                "success_subcriteria": 2
+                "success_subcriteria": 4
             }
         },
         "QC.Lic": {
@@ -445,7 +440,7 @@
                                         "licensee detect . --confidence 60 --json "
                                     ],
                                     "stdout_text": "{\"licenses\":[{\"key\":\"mit\",\"spdx_id\":\"MIT\",\"meta\":{\"title\":\"MIT License\",\"source\":\"https://spdx.org/licenses/MIT.html\",\"description\":\"A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.\",\"how\":\"Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\",\"using\":{\"Babel\":\"https://github.com/babel/babel/blob/master/LICENSE\",\".NET\":\"https://github.com/dotnet/runtime/blob/main/LICENSE.TXT\",\"Rails\":\"https://github.com/rails/rails/blob/master/MIT-LICENSE\"},\"featured\":true,\"hidden\":false,\"nickname\":null,\"note\":null},\"url\":\"http://choosealicense.com/licenses/mit/\",\"rules\":{\"permissions\":[{\"tag\":\"commercial-use\",\"label\":\"Commercial use\",\"description\":\"The licensed material and derivatives may be used for commercial purposes.\"},{\"tag\":\"modifications\",\"label\":\"Modification\",\"description\":\"The licensed material may be modified.\"},{\"tag\":\"distribution\",\"label\":\"Distribution\",\"description\":\"The licensed material may be distributed.\"},{\"tag\":\"private-use\",\"label\":\"Private use\",\"description\":\"The licensed material may be used and modified in private.\"}],\"conditions\":[{\"tag\":\"include-copyright\",\"label\":\"License and copyright notice\",\"description\":\"A copy of the license and copyright notice must be included with the licensed material.\"}],\"limitations\":[{\"tag\":\"liability\",\"label\":\"Liability\",\"description\":\"This license includes a limitation of liability.\"},{\"tag\":\"warranty\",\"label\":\"Warranty\",\"description\":\"This license explicitly states that it does NOT provide any warranty.\"}]},\"fields\":[{\"name\":\"year\",\"description\":\"The current year\"},{\"name\":\"fullname\",\"description\":\"The full name or username of the repository owner\"}],\"other\":false,\"gpl\":false,\"lgpl\":false,\"cc\":false}],\"matched_files\":[{\"filename\":\"LICENSE\",\"content\":\"MIT License\\n\\nCopyright (c) 2024 Fragment Screen\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\\"Software\\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n\",\"content_hash\":\"4c2c763d64bbc7ef2e58b0ec6d06d90cee9755c9\",\"content_normalized\":\"permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'software'), to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. the software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.\",\"matcher\":{\"name\":\"exact\",\"confidence\":100},\"matched_license\":\"MIT\",\"attribution\":\"Copyright (c) 2024 Fragment Screen\"}]}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/70/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/70/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -581,7 +576,7 @@
                                         "licensee detect . --confidence 60 --json "
                                     ],
                                     "stdout_text": "{\"licenses\":[{\"key\":\"mit\",\"spdx_id\":\"MIT\",\"meta\":{\"title\":\"MIT License\",\"source\":\"https://spdx.org/licenses/MIT.html\",\"description\":\"A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.\",\"how\":\"Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\",\"using\":{\"Babel\":\"https://github.com/babel/babel/blob/master/LICENSE\",\".NET\":\"https://github.com/dotnet/runtime/blob/main/LICENSE.TXT\",\"Rails\":\"https://github.com/rails/rails/blob/master/MIT-LICENSE\"},\"featured\":true,\"hidden\":false,\"nickname\":null,\"note\":null},\"url\":\"http://choosealicense.com/licenses/mit/\",\"rules\":{\"permissions\":[{\"tag\":\"commercial-use\",\"label\":\"Commercial use\",\"description\":\"The licensed material and derivatives may be used for commercial purposes.\"},{\"tag\":\"modifications\",\"label\":\"Modification\",\"description\":\"The licensed material may be modified.\"},{\"tag\":\"distribution\",\"label\":\"Distribution\",\"description\":\"The licensed material may be distributed.\"},{\"tag\":\"private-use\",\"label\":\"Private use\",\"description\":\"The licensed material may be used and modified in private.\"}],\"conditions\":[{\"tag\":\"include-copyright\",\"label\":\"License and copyright notice\",\"description\":\"A copy of the license and copyright notice must be included with the licensed material.\"}],\"limitations\":[{\"tag\":\"liability\",\"label\":\"Liability\",\"description\":\"This license includes a limitation of liability.\"},{\"tag\":\"warranty\",\"label\":\"Warranty\",\"description\":\"This license explicitly states that it does NOT provide any warranty.\"}]},\"fields\":[{\"name\":\"year\",\"description\":\"The current year\"},{\"name\":\"fullname\",\"description\":\"The full name or username of the repository owner\"}],\"other\":false,\"gpl\":false,\"lgpl\":false,\"cc\":false}],\"matched_files\":[{\"filename\":\"LICENSE\",\"content\":\"MIT License\\n\\nCopyright (c) 2024 Fragment Screen\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\\"Software\\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n\",\"content_hash\":\"4c2c763d64bbc7ef2e58b0ec6d06d90cee9755c9\",\"content_normalized\":\"permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'software'), to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. the software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.\",\"matcher\":{\"name\":\"exact\",\"confidence\":100},\"matched_license\":\"MIT\",\"attribution\":\"Copyright (c) 2024 Fragment Screen\"}]}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/70/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/70/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -717,7 +712,7 @@
                                         "licensee detect . --confidence 60 --json "
                                     ],
                                     "stdout_text": "{\"licenses\":[{\"key\":\"mit\",\"spdx_id\":\"MIT\",\"meta\":{\"title\":\"MIT License\",\"source\":\"https://spdx.org/licenses/MIT.html\",\"description\":\"A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.\",\"how\":\"Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\",\"using\":{\"Babel\":\"https://github.com/babel/babel/blob/master/LICENSE\",\".NET\":\"https://github.com/dotnet/runtime/blob/main/LICENSE.TXT\",\"Rails\":\"https://github.com/rails/rails/blob/master/MIT-LICENSE\"},\"featured\":true,\"hidden\":false,\"nickname\":null,\"note\":null},\"url\":\"http://choosealicense.com/licenses/mit/\",\"rules\":{\"permissions\":[{\"tag\":\"commercial-use\",\"label\":\"Commercial use\",\"description\":\"The licensed material and derivatives may be used for commercial purposes.\"},{\"tag\":\"modifications\",\"label\":\"Modification\",\"description\":\"The licensed material may be modified.\"},{\"tag\":\"distribution\",\"label\":\"Distribution\",\"description\":\"The licensed material may be distributed.\"},{\"tag\":\"private-use\",\"label\":\"Private use\",\"description\":\"The licensed material may be used and modified in private.\"}],\"conditions\":[{\"tag\":\"include-copyright\",\"label\":\"License and copyright notice\",\"description\":\"A copy of the license and copyright notice must be included with the licensed material.\"}],\"limitations\":[{\"tag\":\"liability\",\"label\":\"Liability\",\"description\":\"This license includes a limitation of liability.\"},{\"tag\":\"warranty\",\"label\":\"Warranty\",\"description\":\"This license explicitly states that it does NOT provide any warranty.\"}]},\"fields\":[{\"name\":\"year\",\"description\":\"The current year\"},{\"name\":\"fullname\",\"description\":\"The full name or username of the repository owner\"}],\"other\":false,\"gpl\":false,\"lgpl\":false,\"cc\":false}],\"matched_files\":[{\"filename\":\"LICENSE\",\"content\":\"MIT License\\n\\nCopyright (c) 2024 Fragment Screen\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\\"Software\\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n\",\"content_hash\":\"4c2c763d64bbc7ef2e58b0ec6d06d90cee9755c9\",\"content_normalized\":\"permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'software'), to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. the software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.\",\"matcher\":{\"name\":\"exact\",\"confidence\":100},\"matched_license\":\"MIT\",\"attribution\":\"Copyright (c) 2024 Fragment Screen\"}]}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/70/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/70/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -853,7 +848,7 @@
                                         "licensee detect . --confidence 60 --json "
                                     ],
                                     "stdout_text": "{\"licenses\":[{\"key\":\"mit\",\"spdx_id\":\"MIT\",\"meta\":{\"title\":\"MIT License\",\"source\":\"https://spdx.org/licenses/MIT.html\",\"description\":\"A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.\",\"how\":\"Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\",\"using\":{\"Babel\":\"https://github.com/babel/babel/blob/master/LICENSE\",\".NET\":\"https://github.com/dotnet/runtime/blob/main/LICENSE.TXT\",\"Rails\":\"https://github.com/rails/rails/blob/master/MIT-LICENSE\"},\"featured\":true,\"hidden\":false,\"nickname\":null,\"note\":null},\"url\":\"http://choosealicense.com/licenses/mit/\",\"rules\":{\"permissions\":[{\"tag\":\"commercial-use\",\"label\":\"Commercial use\",\"description\":\"The licensed material and derivatives may be used for commercial purposes.\"},{\"tag\":\"modifications\",\"label\":\"Modification\",\"description\":\"The licensed material may be modified.\"},{\"tag\":\"distribution\",\"label\":\"Distribution\",\"description\":\"The licensed material may be distributed.\"},{\"tag\":\"private-use\",\"label\":\"Private use\",\"description\":\"The licensed material may be used and modified in private.\"}],\"conditions\":[{\"tag\":\"include-copyright\",\"label\":\"License and copyright notice\",\"description\":\"A copy of the license and copyright notice must be included with the licensed material.\"}],\"limitations\":[{\"tag\":\"liability\",\"label\":\"Liability\",\"description\":\"This license includes a limitation of liability.\"},{\"tag\":\"warranty\",\"label\":\"Warranty\",\"description\":\"This license explicitly states that it does NOT provide any warranty.\"}]},\"fields\":[{\"name\":\"year\",\"description\":\"The current year\"},{\"name\":\"fullname\",\"description\":\"The full name or username of the repository owner\"}],\"other\":false,\"gpl\":false,\"lgpl\":false,\"cc\":false}],\"matched_files\":[{\"filename\":\"LICENSE\",\"content\":\"MIT License\\n\\nCopyright (c) 2024 Fragment Screen\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\\"Software\\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n\",\"content_hash\":\"4c2c763d64bbc7ef2e58b0ec6d06d90cee9755c9\",\"content_normalized\":\"permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'software'), to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. the software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.\",\"matcher\":{\"name\":\"exact\",\"confidence\":100},\"matched_license\":\"MIT\",\"attribution\":\"Copyright (c) 2024 Fragment Screen\"}]}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/70/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/70/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -998,8 +993,8 @@
                                     "stdout_command": [
                                         "bandit -f json --quiet  --confidence-level high --severity-level high --recursive  ."
                                     ],
-                                    "stdout_text": "{\n  \"errors\": [],\n  \"generated_at\": \"2026-11-11T12:53:13Z\",\n  \"metrics\": {\n    \"./core/__init__.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 22,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/__main__.py\": {\n      \"CONFIDENCE.HIGH\": 2,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 1,\n      \"SEVERITY.LOW\": 1,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 49,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/actions/core_action.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 92,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/actions/install_plugin.py\": {\n      \"CONFIDENCE.HIGH\": 5,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 5,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 81,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/actions/other_plugin_action.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 81,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/constants.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 19,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/db/sqlite.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 21,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/db/sqlite_db.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 1,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 1,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 99,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./setup.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 18,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"_totals\": {\n      \"CONFIDENCE.HIGH\": 7,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 1,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 1,\n      \"SEVERITY.LOW\": 6,\n      \"SEVERITY.MEDIUM\": 1,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 482,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    }\n  },\n  \"results\": [\n    {\n      \"code\": \"19 \\n20     result = subprocess.call(cmd, shell=True)\\n21     sys.exit(result)\\n\",\n      \"col_offset\": 13,\n      \"filename\": \"./core/__main__.py\",\n      \"issue_confidence\": \"HIGH\",\n      \"issue_cwe\": {\n        \"id\": 78,\n        \"link\": \"https://cwe.mitre.org/data/definitions/78.html\"\n      },\n      \"issue_severity\": \"HIGH\",\n      \"issue_text\": \"subprocess call with shell=True identified, security issue.\",\n      \"line_number\": 20,\n      \"line_range\": [\n        20\n      ],\n      \"more_info\": \"https://bandit.readthedocs.io/en/1.7.4/plugins/b602_subprocess_popen_with_shell_equals_true.html\",\n      \"test_id\": \"B602\",\n      \"test_name\": \"subprocess_popen_with_shell_equals_true\"\n    }\n  ]\n}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/79/log?consoleFull"
+                                    "stdout_text": "{\n  \"errors\": [],\n  \"generated_at\": \"2026-11-12T17:33:54Z\",\n  \"metrics\": {\n    \"./core/__init__.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 22,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/__main__.py\": {\n      \"CONFIDENCE.HIGH\": 2,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 1,\n      \"SEVERITY.LOW\": 1,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 49,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/actions/core_action.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 92,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/actions/install_plugin.py\": {\n      \"CONFIDENCE.HIGH\": 5,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 5,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 81,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/actions/other_plugin_action.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 81,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/constants.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 19,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/db/sqlite.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 21,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./core/db/sqlite_db.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 1,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 1,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 99,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./setup.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 18,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"_totals\": {\n      \"CONFIDENCE.HIGH\": 7,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 1,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 1,\n      \"SEVERITY.LOW\": 6,\n      \"SEVERITY.MEDIUM\": 1,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 482,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    }\n  },\n  \"results\": [\n    {\n      \"code\": \"19 \\n20     result = subprocess.call(cmd, shell=True)\\n21     sys.exit(result)\\n\",\n      \"col_offset\": 13,\n      \"filename\": \"./core/__main__.py\",\n      \"issue_confidence\": \"HIGH\",\n      \"issue_cwe\": {\n        \"id\": 78,\n        \"link\": \"https://cwe.mitre.org/data/definitions/78.html\"\n      },\n      \"issue_severity\": \"HIGH\",\n      \"issue_text\": \"subprocess call with shell=True identified, security issue.\",\n      \"line_number\": 20,\n      \"line_range\": [\n        20\n      ],\n      \"more_info\": \"https://bandit.readthedocs.io/en/1.7.4/plugins/b602_subprocess_popen_with_shell_equals_true.html\",\n      \"test_id\": \"B602\",\n      \"test_name\": \"subprocess_popen_with_shell_equals_true\"\n    }\n  ]\n}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/79/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -1011,7 +1006,7 @@
                             },
                             "data_unstructured": {
                                 "errors": [],
-                                "generated_at": "2026-11-11T12:53:13Z",
+                                "generated_at": "2026-11-12T17:33:54Z",
                                 "metrics": {
                                     "./core/__init__.py": {
                                         "CONFIDENCE.HIGH": 0,
@@ -1208,7 +1203,7 @@
                                         "flake8 ."
                                     ],
                                     "stdout_text": "./core/__init__.py:14:80: E501 line too long (91 > 79 characters)\n./core/__main__.py:3:1: F403 'from core.constants import *' used; unable to detect undefined names\n./core/__main__.py:5:1: E302 expected 2 blank lines, found 1\n./core/__main__.py:23:1: E302 expected 2 blank lines, found 1\n./core/__main__.py:26:16: F405 'INSTALL_ACTIONS' may be undefined, or defined from star imports: core.constants\n./core/__main__.py:30:18: F405 'CORE_ACTIONS' may be undefined, or defined from star imports: core.constants\n./core/__main__.py:34:18: F405 'OTHER_PLUGIN_ACTIONS' may be undefined, or defined from star imports: core.constants\n./core/__main__.py:38:18: F405 'ACTION_PIP' may be undefined, or defined from star imports: core.constants\n./core/__main__.py:46:1: W293 blank line contains whitespace\n./core/__main__.py:48:6: F405 'ACTION_HELP' may be undefined, or defined from star imports: core.constants\n./core/__main__.py:50:6: F405 'ACTION_INSTALL_PLUGIN' may be undefined, or defined from star imports: core.constants\n./core/__main__.py:51:1: W293 blank line contains whitespace\n./core/__main__.py:52:6: F405 'ACTION_UNINSTALL_PLUGIN' may be undefined, or defined from star imports: core.constants\n./core/__main__.py:53:1: W293 blank line contains whitespace\n./core/__main__.py:54:6: F405 'ACTION_CREATE_PROJECT' may be undefined, or defined from star imports: core.constants\n./core/__main__.py:55:1: W293 blank line contains whitespace\n./core/__main__.py:56:6: F405 'ACTION_DELETE_PROJECT' may be undefined, or defined from star imports: core.constants\n./core/__main__.py:57:1: W293 blank line contains whitespace\n./core/__main__.py:58:6: F405 'ACTION_LIST_PROJECTS' may be undefined, or defined from star imports: core.constants\n./core/__main__.py:59:1: W293 blank line contains whitespace\n./core/__main__.py:60:6: F405 'ACTION_LINK_PROJECT' may be undefined, or defined from star imports: core.constants\n./core/__main__.py:60:80: E501 line too long (95 > 79 characters)\n./core/__main__.py:61:1: W293 blank line contains whitespace\n./core/__main__.py:62:6: F405 'ACTION_EXECUTE' may be undefined, or defined from star imports: core.constants\n./core/__main__.py:62:80: E501 line too long (94 > 79 characters)\n./core/__main__.py:63:1: W293 blank line contains whitespace\n./core/__main__.py:66:1: E305 expected 2 blank lines after class or function definition, found 1\n./core/actions/core_action.py:7:80: E501 line too long (128 > 79 characters)\n./core/actions/core_action.py:8:80: E501 line too long (95 > 79 characters)\n./core/actions/core_action.py:10:1: E302 expected 2 blank lines, found 1\n./core/actions/core_action.py:13:80: E501 line too long (134 > 79 characters)\n./core/actions/core_action.py:16:1: E302 expected 2 blank lines, found 1\n./core/actions/core_action.py:29:80: E501 line too long (93 > 79 characters)\n./core/actions/core_action.py:30:80: E501 line too long (100 > 79 characters)\n./core/actions/core_action.py:33:80: E501 line too long (129 > 79 characters)\n./core/actions/core_action.py:40:80: E501 line too long (95 > 79 characters)\n./core/actions/core_action.py:41:80: E501 line too long (100 > 79 characters)\n./core/actions/core_action.py:44:80: E501 line too long (84 > 79 characters)\n./core/actions/core_action.py:61:80: E501 line too long (120 > 79 characters)\n./core/actions/core_action.py:62:80: E501 line too long (127 > 79 characters)\n./core/actions/core_action.py:65:80: E501 line too long (80 > 79 characters)\n./core/actions/core_action.py:66:80: E501 line too long (128 > 79 characters)\n./core/actions/core_action.py:85:80: E501 line too long (82 > 79 characters)\n./core/actions/core_action.py:89:80: E501 line too long (134 > 79 characters)\n./core/actions/core_action.py:98:80: E501 line too long (134 > 79 characters)\n./core/actions/core_action.py:110:80: E501 line too long (104 > 79 characters)\n./core/actions/core_action.py:112:18: E111 indentation is not a multiple of 4\n./core/actions/core_action.py:112:18: E117 over-indented\n./core/actions/core_action.py:112:80: E501 line too long (87 > 79 characters)\n./core/actions/core_action.py:114:80: E501 line too long (160 > 79 characters)\n./core/actions/core_action.py:117:80: E501 line too long (130 > 79 characters)\n./core/actions/install_plugin.py:8:80: E501 line too long (87 > 79 characters)\n./core/actions/install_plugin.py:19:80: E501 line too long (80 > 79 characters)\n./core/actions/install_plugin.py:20:80: E501 line too long (80 > 79 characters)\n./core/actions/install_plugin.py:21:80: E501 line too long (80 > 79 characters)\n./core/actions/install_plugin.py:24:80: E501 line too long (95 > 79 characters)\n./core/actions/install_plugin.py:25:80: E501 line too long (119 > 79 characters)\n./core/actions/install_plugin.py:27:80: E501 line too long (80 > 79 characters)\n./core/actions/install_plugin.py:28:80: E501 line too long (87 > 79 characters)\n./core/actions/install_plugin.py:30:80: E501 line too long (80 > 79 characters)\n./core/actions/install_plugin.py:31:80: E501 line too long (80 > 79 characters)\n./core/actions/install_plugin.py:32:80: E501 line too long (80 > 79 characters)\n./core/actions/install_plugin.py:35:80: E501 line too long (97 > 79 characters)\n./core/actions/install_plugin.py:36:80: E501 line too long (110 > 79 characters)\n./core/actions/install_plugin.py:38:80: E501 line too long (82 > 79 characters)\n./core/actions/install_plugin.py:39:80: E501 line too long (91 > 79 characters)\n./core/actions/install_plugin.py:54:80: E501 line too long (89 > 79 characters)\n./core/actions/install_plugin.py:58:80: E501 line too long (95 > 79 characters)\n./core/actions/install_plugin.py:61:80: E501 line too long (90 > 79 characters)\n./core/actions/install_plugin.py:65:80: E501 line too long (88 > 79 characters)\n./core/actions/install_plugin.py:71:80: E501 line too long (105 > 79 characters)\n./core/actions/install_plugin.py:73:80: E501 line too long (87 > 79 characters)\n./core/actions/install_plugin.py:78:80: E501 line too long (110 > 79 characters)\n./core/actions/install_plugin.py:79:80: E501 line too long (91 > 79 characters)\n./core/actions/install_plugin.py:84:80: E501 line too long (90 > 79 characters)\n./core/actions/install_plugin.py:85:80: E501 line too long (87 > 79 characters)\n./core/actions/install_plugin.py:90:80: E501 line too long (134 > 79 characters)\n./core/actions/install_plugin.py:96:80: E501 line too long (81 > 79 characters)\n./core/actions/install_plugin.py:97:80: E501 line too long (80 > 79 characters)\n./core/actions/install_plugin.py:100:80: E501 line too long (138 > 79 characters)\n./core/actions/other_plugin_action.py:5:80: E501 line too long (98 > 79 characters)\n./core/actions/other_plugin_action.py:21:80: E501 line too long (114 > 79 characters)\n./core/actions/other_plugin_action.py:28:80: E501 line too long (85 > 79 characters)\n./core/actions/other_plugin_action.py:31:80: E501 line too long (123 > 79 characters)\n./core/actions/other_plugin_action.py:32:80: E501 line too long (126 > 79 characters)\n./core/actions/other_plugin_action.py:44:80: E501 line too long (108 > 79 characters)\n./core/actions/other_plugin_action.py:45:80: E501 line too long (83 > 79 characters)\n./core/actions/other_plugin_action.py:48:80: E501 line too long (104 > 79 characters)\n./core/actions/other_plugin_action.py:50:80: E501 line too long (81 > 79 characters)\n./core/actions/other_plugin_action.py:51:80: E501 line too long (139 > 79 characters)\n./core/actions/other_plugin_action.py:57:80: E501 line too long (174 > 79 characters)\n./core/actions/other_plugin_action.py:60:80: E501 line too long (148 > 79 characters)\n./core/actions/other_plugin_action.py:65:80: E501 line too long (86 > 79 characters)\n./core/actions/other_plugin_action.py:75:80: E501 line too long (108 > 79 characters)\n./core/actions/other_plugin_action.py:76:80: E501 line too long (83 > 79 characters)\n./core/actions/other_plugin_action.py:80:80: E501 line too long (94 > 79 characters)\n./core/actions/other_plugin_action.py:83:80: E501 line too long (85 > 79 characters)\n./core/actions/other_plugin_action.py:84:80: E501 line too long (176 > 79 characters)\n./core/actions/other_plugin_action.py:85:80: E501 line too long (182 > 79 characters)\n./core/actions/other_plugin_action.py:89:80: E501 line too long (157 > 79 characters)\n./core/actions/other_plugin_action.py:91:80: E501 line too long (98 > 79 characters)\n./core/actions/other_plugin_action.py:94:80: E501 line too long (90 > 79 characters)\n./core/actions/other_plugin_action.py:100:80: E501 line too long (174 > 79 characters)\n./core/actions/other_plugin_action.py:103:80: E501 line too long (148 > 79 characters)\n./core/db/sqlite.py:7:80: E501 line too long (101 > 79 characters)\n./core/db/sqlite.py:10:1: E302 expected 2 blank lines, found 1\n./core/db/sqlite_db.py:4:1: E302 expected 2 blank lines, found 1\n./core/db/sqlite_db.py:10:80: E501 line too long (118 > 79 characters)\n./core/db/sqlite_db.py:12:80: E501 line too long (96 > 79 characters)\n./core/db/sqlite_db.py:13:80: E501 line too long (94 > 79 characters)\n./core/db/sqlite_db.py:14:80: E501 line too long (99 > 79 characters)\n./core/db/sqlite_db.py:16:80: E501 line too long (81 > 79 characters)\n./core/db/sqlite_db.py:30:80: E501 line too long (116 > 79 characters)\n./core/db/sqlite_db.py:47:80: E501 line too long (94 > 79 characters)\n./core/db/sqlite_db.py:54:80: E501 line too long (87 > 79 characters)\n./core/db/sqlite_db.py:66:80: E501 line too long (89 > 79 characters)\n./core/db/sqlite_db.py:87:80: E501 line too long (89 > 79 characters)\n./core/db/sqlite_db.py:103:80: E501 line too long (100 > 79 characters)\n./core/db/sqlite_db.py:107:80: E501 line too long (95 > 79 characters)",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/88/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/88/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -1261,7 +1256,7 @@
                                         "pytest  --json-report  --json-report-indent 4"
                                     ],
                                     "stdout_text": "============================= test session starts ==============================\nplatform linux -- Python 3.9.17, pytest-7.1.3, pluggy-1.2.0\nrootdir: /sqaaas-build/github.com/FragmentScreen/fandanGO-core\nplugins: json-report-1.5.0, metadata-3.0.0\ncollected 0 items\n\n--------------------------------- JSON report ----------------------------------\nreport saved to: .report.json\n============================ no tests ran in 0.01s =============================",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/97/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/97/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -1314,7 +1309,7 @@
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "[]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/106/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/106/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -1328,7 +1323,7 @@
                         }
                     ],
                     "valid": false,
-                    "required_for_next_level_badge": false
+                    "required_for_next_level_badge": true
                 },
                 "QC.Ver01": {
                     "description": "Is the latest release compliant with Semantic Versioning (SemVer) specification?",
@@ -1357,7 +1352,7 @@
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "[]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/106/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/106/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -1400,7 +1395,7 @@
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "[]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/1/execution/node/106/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/fandanGO-core.assess.sqaaas/job/main/4/execution/node/106/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/fandanGO-core.assess.sqaaas"
@@ -1435,7 +1430,7 @@
                             "message": "No matching files found for language <CodeMeta> in repository searching by extensions or filenames\nNo matching files found for language <Citation File Format> in repository searching by extensions or filenames"
                         }
                     ],
-                    "required_for_next_level_badge": false
+                    "required_for_next_level_badge": true
                 }
             },
             "coverage": {
@@ -1454,11 +1449,10 @@
                         "QC.Doc",
                         "QC.Acc"
                     ],
-                    "missing": [
-                        "QC.Doc"
-                    ],
+                    "missing": [],
                     "fulfilled": [
                         "QC.Lic",
+                        "QC.Doc",
                         "QC.Acc"
                     ]
                 },
@@ -1472,11 +1466,11 @@
                     ],
                     "missing": [
                         "QC.Met",
-                        "QC.Ver",
-                        "QC.Doc"
+                        "QC.Ver"
                     ],
                     "fulfilled": [
                         "QC.Lic",
+                        "QC.Doc",
                         "QC.Acc"
                     ]
                 },
@@ -1496,16 +1490,78 @@
                         "QC.Met",
                         "QC.Sec",
                         "QC.Ver",
-                        "QC.Uni",
-                        "QC.Doc"
+                        "QC.Uni"
                     ],
                     "fulfilled": [
                         "QC.Lic",
+                        "QC.Doc",
                         "QC.Acc"
                     ]
                 }
             },
-            "data": {}
+            "data": {
+                "entityType": "Assertion",
+                "id": "6116c84d1ff787222b6c4d15",
+                "entityId": "i9CirfwJTuSfiqg0FFUBdQ",
+                "openBadgeId": "fake-badge",
+                "createdAt": "2026-08-17T06:54:31.104Z",
+                "createdBy": "",
+                "badgeclass": "",
+                "badgeclassOpenBadgeId": "",
+                "issuer": "",
+                "issuerOpenBadgeId": "",
+                "image": "",
+                "recipient": {
+                    "identity": "",
+                    "hashed": "",
+                    "type": "",
+                    "salt": "",
+                    "plaintextIdentity": ""
+                },
+                "issuedOn": "2026-08-17T06:54:31.104Z",
+                "narrative": "string",
+                "evidence": [
+                    {
+                        "url": "string",
+                        "narrative": "string",
+                        "name": "string",
+                        "description": "string",
+                        "genre": "string",
+                        "audience": "string"
+                    }
+                ],
+                "revoked": true,
+                "revocationReason": "string",
+                "acceptance": "Unaccepted",
+                "expires": "2026-08-17T06:54:31.104Z",
+                "extensions": {
+                    "additionalProp1": {},
+                    "additionalProp2": {},
+                    "additionalProp3": {}
+                },
+                "assertionRef": {
+                    "assertionUrl": ""
+                },
+                "badgeRef": {
+                    "badgeUrl": ""
+                },
+                "issuerRef": {
+                    "issuerUrl": ""
+                },
+                "pending": true,
+                "source": "local",
+                "sourceUrl": "https://example.com/assertions/1",
+                "originalJson": "{}",
+                "imagePath": "",
+                "ob3AwardProperties": {
+                    "activityStart": "2026-08-17T06:54:31.104Z",
+                    "activityEnd": "2026-08-17T06:54:31.104Z",
+                    "licenseNumber": "string",
+                    "role": "string"
+                }
+            },
+            "share": "<!--\nSPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>\nSPDX-FileContributor: Pablo Orviz <orviz@ifca.unican.es>\n\nSPDX-License-Identifier: GPL-3.0-only\n-->\n\n<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"fake-badge?identity__url=https%3A//github.com/EOSC-synergy/fandanGO-core.assess.sqaaas/commit/cc010f4af1a9f070e98c37ff2cb7ff56aaa191b9\"><img width=\"120px\" height=\"120px\" src=\"\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
+            "verification_url": "https://badgecheck.io/?url=fake-badge?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FfandanGO-core.assess.sqaaas%2Fcommit%2Fcc010f4af1a9f070e98c37ff2cb7ff56aaa191b9&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FfandanGO-core.assess.sqaaas%2Fcommit%2Fcc010f4af1a9f070e98c37ff2cb7ff56aaa191b9"
         }
     }
 }
