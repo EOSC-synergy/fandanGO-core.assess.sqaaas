@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/FragmentScreen/fandanGO-core git:
         commands:
-        - /usr/bin/env sh .sqa/script.arctic_realistic_caiman.sh
-        container: qc.acc_thistle_frugal_spren
+        - /usr/bin/env sh .sqa/script.violet_bewildered_quoll.sh
+        container: qc.acc_crimson_zealous_cockatoo
   QC.Doc:
     repos:
       github.com/FragmentScreen/fandanGO-core find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.magenta_shy_mandrill.sh
-        container: qc.doc_tundra_imaginative_osprey
+        - /usr/bin/env sh .sqa/script.hunter_mischievous_kraken.sh
+        container: qc.doc_saffron_easygoing_alpaca
       github.com/FragmentScreen/fandanGO-core git:
         commands:
-        - /usr/bin/env sh .sqa/script.tan_helpful_lionfish.sh
-        container: qc.doc_denim_content_warthog
+        - /usr/bin/env sh .sqa/script.turquoise_enthusiastic_griffin.sh
+        container: qc.doc_hunter_perceptive_hedgehog
       github.com/FragmentScreen/fandanGO-core markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pistachio_vibrant_bullfrog.sh
-        container: qc.doc_lagoon_unique_butterfly
+        - /usr/bin/env sh .sqa/script.grape_articulate_seal.sh
+        container: qc.doc_raven_sincere_gorilla
   QC.Lic:
     repos:
       github.com/FragmentScreen/fandanGO-core licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ruby_philosophical_weasel.sh
-        container: qc.lic_watermelon_industrious_echidna
+        - /usr/bin/env sh .sqa/script.beige_brilliant_piranha.sh
+        container: qc.lic_tide_dreamy_armadillo
   QC.Sec:
     repos:
       github.com/FragmentScreen/fandanGO-core bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.jet_insightful_panther.sh
-        container: qc.sec_fern_zealous_gnu
+        - /usr/bin/env sh .sqa/script.fandango_articulate_rabbit.sh
+        container: qc.sec_khaki_ambitious_finch
   QC.Sty:
     repos:
       github.com/FragmentScreen/fandanGO-core flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.steel_observant_weasel.sh
-        container: qc.sty_royal_bewildered_warthog
+        - /usr/bin/env sh .sqa/script.marina_plucky_otter.sh
+        container: qc.sty_pine_cheerful_walrus
   QC.Uni:
     repos:
       github.com/FragmentScreen/fandanGO-core pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.coral_balanced_hydra.sh
-        container: qc.uni_chestnut_amused_gerbil
+        - /usr/bin/env sh .sqa/script.banana_savvy_gorilla.sh
+        container: qc.uni_cinnabar_creative_clownfish
   QC.Ver:
     repos:
       github.com/FragmentScreen/fandanGO-core get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sapphire_peaceful_octopus.sh
-        container: qc.ver_claret_brave_donkey
+        - /usr/bin/env sh .sqa/script.walnut_vigilant_spren.sh
+        container: qc.ver_cinnabar_generous_butterfly
 timeout: 5400
